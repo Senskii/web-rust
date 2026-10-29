@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap");
+
+body {
+  margin: 0;
+  background: #fffef6;
+  color: #fffef6;
+  font-family: "Dolly Pro", Georgia, serif;
+  font-size: 14pt;
+  line-height: 1.6;
+}
+
+.bovenbalk {
+  display: block;
+  width: 100%;
+  height: 13rem;
+}
+
+h1,h2 {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  line-height: 1.1;
+}
+
+h1 {
+  padding-bottom: 0.1em;
+  border-bottom: 0.1em solid #fffef6;
+  font-size: 80pt;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+header,footer {
+  padding: 1.5rem 2rem;
+  background: #7984b6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+/* Bron: https://www.w3schools.com/cssref/css3_pr_flex-direction.php
+Voor flex-direction: column; zodat ik de knoppen onder elkaar kan zetten. */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 5rem;
+}
+
+footer nav {
+  align-items: center;
+}
+
+.knop {
+  padding: 0.2rem 4.6rem;
+  border-radius: 2rem;
+  background: #e99668;
+  color: #fffef6;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale, 
+om de knop van grote te laten veranderen. */
+.knop:hover {
+  transform: scale(1.08);
+}
+
+/* Bron: Claude,
+nodig voor de lichtblauwe streep achter elk blauw blok. In mijn ontwerp is die
+dunner dan het blok, en dat lukte me niet met een gewone achtergrondkleur want dan werd de balk achter het blauwe tekstblok
+dikker dan het tekstblok. */
+.rij {
+  margin: 8rem 0;
+  background: linear-gradient(#d4e3f0, #d4e3f0) no-repeat center / 100% 60%;
+}
+
+/* Bron: https://www.w3schools.com/css/css_align.asp
+Voor margin: 0 auto; om het blok in het midden te krijgen. */
+.blok {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: #7984b6;
+}
+
+p, ol {
+  margin: 0;
+}
+
+a {
+  color: #fffef6;
+}
+
+li {
+  margin-top: 1rem;
+}
